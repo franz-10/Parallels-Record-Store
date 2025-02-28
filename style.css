@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(209, 164, 67);
+    font-family: "Rubik";
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 0.9375rem; /* 15px */
+    max-width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.625rem; /* 10px */
+    letter-spacing: 0.125rem; /* 2px */
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 0.1875rem solid; /* 3px */
+    padding: 0.15625rem 0.3125rem; /* 0.25em 0.5em */
+    box-shadow: 0.0625rem 0.0625rem 0px 0px, 0.125rem 0.125rem 0px 0px, 0.1875rem 0.1875rem 0px 0px, 0.25rem 0.25rem 0px 0px, 0.3125rem 0.3125rem 0px 0px; /* 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px */
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-54:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 0.3125rem; /* 5px */
+    left: 0.3125rem; /* 5px */
+}
+
+@media (min-width: 48rem) { /* 768px */
+    .button-54 {
+        padding: 0.15625rem 0.46875rem; /* 0.25em 0.75em */
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.125rem; /* 50px */
+}
+
+.logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.25rem; /* 20px */
+    padding-top: 0.3125rem; /* 5px */
+}
+
+.heading {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    align-items: center;
+    padding-top: 0.625rem; /* 10px */
+    justify-content: center;
+    padding-left: 0.625rem; /* 10px */
+}
+
+.about {
+    grid-column: 6 / 11;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.unterheader {
+    grid-column: 1 / 11;
+    grid-row: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.875rem; /* 30px */
+}
+
+.about-text {
+    grid-column: 4 / 8;
+    grid-row: 3 / 6;
+    text-align: center;
+}
+
+.home {
+    grid-column: 7 / 9;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 90px;
+}
+
+.imageleftabout {
+    grid-column: 1 / 4;
+    grid-row: 3 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagerightabout {
+    grid-column: 8 / 11;
+    grid-row: 4 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimage {
+    grid-column: 1 / 11;
+    grid-row: 4 / 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    grid-column: 1 / 11;
+    grid-row: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collection {
+    grid-column: 9 / 11;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 160px;
+}
+
+.insta {
+    grid-column: 7 / 9;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 120px;
+    padding-right: 320px;
+    padding-top: 9px;
+}
+
+.maps {
+    grid-column: 10 / 11;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapscontainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 11;
+    grid-row: 4 / 9;
+}
+
+iframe {
+    width: 100%;
+    max-width: 850px;
+    height: 900px;
+    border: 4px solid black;
+}
+
+.youcanfindus{
+    grid-column: 5 / 7;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 48rem) { /* 768px */
+    .heading h1, .slogan h1, .unterheader h1, .about-text h1 {
+        font-size: 2.5vw;
+    }
+
+    .heroimage img, .imageleftabout img, .imagerightabout img {
+        width: 80%; /* Adjust the width as needed */
+    }
+}
+
+
